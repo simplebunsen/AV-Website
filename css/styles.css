@@ -34,8 +34,8 @@ body {
     grid-column: 1 / 2;
     width: 100%;
     height: 100%;
-    padding: .4rem;
-    font-size: 1.5rem;
+    padding: .6rem;
+    font-size: 1.2rem;
     background-color: rgb(25, 25, 25);
     color: #E3D478;
 }
@@ -43,15 +43,15 @@ body {
 .nav-area .nav-container {
     position: sticky;
     /* corresponds to nav area padding */
-    top: 0.4rem;
-    border-left: #E3D478 1px solid;
-    padding-top: 1.4rem;
-    padding-bottom: 1.8rem;
-    padding-left: .4rem;
-    align-items: center;
+    top: 2rem;
+    border-left: #E3D478 .2rem solid;
+    margin-top: 1.4rem;
+    margin-bottom: 1.8rem;
+    margin-left: .4rem;
+    align-items:flex-start;
     display: flex;
     flex-direction: column;
-    height: 98vh;
+    height: 95vh;
 }
 
 .nav-area a {
@@ -67,10 +67,11 @@ body {
 
 .nav-area nav ul {
     list-style-type: none;
+    width: 100%;
 }
 
 .nav-area nav ul li {
-    padding-top: .8rem;
+    margin: .5rem 0;
     white-space: nowrap;    
     color: #E3D478;
 }
@@ -81,18 +82,22 @@ body {
 
 .nav-area .logo-container {
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.7rem;
     font-size: 2.2rem;
 }
+video{
+    width: 100%;
+}
 
 .nav-area .nav-credits {
-    justify-self: flex-end;
     margin-top: auto;
     font-size: .8rem;
     font-style: italic;
 }
 
-span.workshop{
+span.label{
     display: inline-block;
     border: solid 2px #E3D478;
     margin-right: .3rem;
@@ -103,6 +108,41 @@ span.workshop{
     font-weight: 1000;
 }
 
+span.label svg{
+    width: 1.2rem;
+}
+
+button.accordion {
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: transparent;
+    padding-top: .8rem;
+    white-space: nowrap;    
+    color: #E3D478;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.5rem;
+    text-align: left;    
+    border: solid 2px #E3D478;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .nav-section {
+    overflow: hidden;
+    padding-left: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: .7rem;
+  }
 
 
 
@@ -159,6 +199,8 @@ main article{
 
 p {
     margin: 1.5rem 2rem;
+    font-size: 1.25rem;
+    text-align: justify;
 }
 
 p.zitat {
