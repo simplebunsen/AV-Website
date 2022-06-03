@@ -56,11 +56,13 @@ body {
 
 .nav-area a {
     text-decoration: none;
-    color: #E3D478;
+}
+.nav-area a:visited {
+    color: inherit;
 }
 
 .nav-area .nav-actual{
-
+    padding: 1rem;
 }
 
 .nav-area nav ul {
@@ -69,6 +71,12 @@ body {
 
 .nav-area nav ul li {
     padding-top: .8rem;
+    white-space: nowrap;    
+    color: #E3D478;
+}
+.nav-area nav ul li:hover {
+    color: white;
+    transform: scale(1.1);
 }
 
 .nav-area .logo-container {
@@ -83,6 +91,18 @@ body {
     font-size: .8rem;
     font-style: italic;
 }
+
+span.workshop{
+    display: inline-block;
+    border: solid 2px #E3D478;
+    margin-right: .3rem;
+    padding: 0 .2rem;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 1000;
+}
+
 
 
 
