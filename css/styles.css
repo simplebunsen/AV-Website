@@ -4,6 +4,7 @@
 
 html{
     font-size: 16px;
+    width: 100%;
 }
 
 * {
@@ -14,7 +15,8 @@ html{
 
 body {
     height: max-content;    
-    overflow: auto;;
+    overflow: auto;
+    width: 100%;
     min-height: 100vh;
     font-family: 'PT Sans Narrow', sans-serif;
     background-color: rgba(228, 228, 228, 0.856);
@@ -39,7 +41,9 @@ body {
 }
 
 .nav-area .nav-container {
-    position: fixed;
+    position: sticky;
+    /* corresponds to nav area padding */
+    top: 0.4rem;
     border-left: #E3D478 1px solid;
     padding-top: 1.4rem;
     padding-bottom: 1.8rem;
@@ -47,7 +51,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 98%;
+    height: 98vh;
 }
 
 .nav-area a {
@@ -99,7 +103,7 @@ main article{
 }
 
 .banner {
-    height: 5rem;
+    height: 3rem;
     color: black;
     width: 100%;
     background-color: #9db5d1b3;
@@ -110,17 +114,54 @@ main article{
     border-left: #2a5f92 .5rem solid;
 }
 
-.zitat {
+.main-title{
+    height: 6rem;
+}
+
+
+
+.banner h1 {
+    font-size: 3.5rem;
+    font-weight: 1000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    align-self: center;
+    justify-self: left;
+}
+
+.banner h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    align-self: center;
+    justify-self: left;
+}
+
+
+p {
+    margin: 1.5rem 2rem;
+}
+
+p.zitat {
+    padding: .5rem;
+    margin: 1.5rem auto;
+    width: fit-content;
     font-style: italic;
     text-align: center;
     text-decoration: none;
     color: #2a5f92 !important;
 }
 
-.zitat a {
+p.zitat a {
     text-decoration: none;
     color: #2a5f92 !important;
 }
+
+
+table {
+    border: rgb(25, 25, 25) 2px solid;
+}
+
+
 
 /*===END OF MAIN AREA===*/
 
@@ -154,32 +195,5 @@ aside.sidebar figure figcaption{
 
 
 /*===END OF SIDEBAR AREA===*/
-
-
-
-
-
-
-
-h1 {
-    font-size: 1.5rem;
-    font-family: 'PT Sans Narrow', sans-serif;
-    align-self: center;
-    justify-self: left;
-}
-
-
-
-
-p {
-    padding: 1.5rem 2rem;
-}
-
-
-
-table {
-    border: rgb(25, 25, 25) 2px solid;
-}
-
 
 
