@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
-
+html{
+    font-size: 16px;
+}
 
 * {
     margin: 0px;
@@ -18,7 +20,6 @@ body {
     background-color: rgba(228, 228, 228, 0.856);
     color: black;
     text-align: left;
-    font-size: 18px;
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
     grid-template-rows: 3rem 1fr 2rem;
@@ -31,8 +32,8 @@ body {
     grid-column: 1 / 2;
     width: 100%;
     height: 100%;
-    padding: 5px;
-    font-size: 22px;
+    padding: .4rem;
+    font-size: 1.5rem;
     background-color: rgb(25, 25, 25);
     color: #E3D478;
 }
@@ -40,9 +41,9 @@ body {
 .nav-area .nav-container {
     position: fixed;
     border-left: #E3D478 1px solid;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 5px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.8rem;
+    padding-left: .4rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -60,23 +61,22 @@ body {
 
 .nav-area nav ul {
     list-style-type: none;
-    padding-left: 0px;
 }
 
 .nav-area nav ul li {
-    padding-top: 10px;
+    padding-top: .8rem;
 }
 
 .nav-area .logo-container {
-    margin-bottom: 30px;
-    line-height: 24px;
-    font-size: 35px;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+    font-size: 2.2rem;
 }
 
 .nav-area .nav-credits {
     justify-self: flex-end;
     margin-top: auto;
-    font-size: 13px;
+    font-size: .8rem;
     font-style: italic;
 }
 
@@ -105,9 +105,9 @@ main article{
     background-color: #9db5d1b3;
     display: flex;
     justify-content: left;
-    padding-left: 20px;
-    margin-bottom: 15px;
-    border-left: #2a5f92 9px solid;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: #2a5f92 .5rem solid;
 }
 
 .zitat {
@@ -127,12 +127,10 @@ main article{
 
 /*===START OF SIDEBAR AREA===*/
 aside.sidebar{
-    height: 200px !important;
-
     grid-row: 1 / 4;
     grid-column: 3 / 4;
     width: 100%;
-    padding: 5px;
+    padding: .2rem;
     min-height: 100%;
     height: auto;
     background-color: rgb(25, 25, 25);
@@ -144,11 +142,16 @@ aside.sidebar{
     flex-wrap: wrap;
 }
 
-aside.sidebar img {
-    max-width: 100%;
+aside.sidebar figure {
     padding: 1rem;
-
 }
+aside.sidebar figure img{
+    max-width: 100%;
+}
+aside.sidebar figure figcaption{
+    color: white;
+}
+
 
 /*===END OF SIDEBAR AREA===*/
 
@@ -159,7 +162,7 @@ aside.sidebar img {
 
 
 h1 {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: 'PT Sans Narrow', sans-serif;
     align-self: center;
     justify-self: left;
@@ -169,10 +172,7 @@ h1 {
 
 
 p {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 1.5rem 2rem;
 }
 
 
