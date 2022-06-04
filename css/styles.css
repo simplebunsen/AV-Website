@@ -269,7 +269,7 @@ aside.sidebar figure {
 }
 
 aside.sidebar figure:hover{
-    filter:saturate(1.5);
+    filter:saturate(1.5) brightness(1.2);
     transform: scale(1.02);
 }
 
