@@ -57,7 +57,7 @@ body {
 .nav-area a {
     text-decoration: none;
 }
-.nav-area a:visited {
+a:visited {
     color: inherit;
 }
 
@@ -144,7 +144,6 @@ button.accordion {
     overflow: hidden;
     padding-left: 2rem;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin-bottom: .7rem;
   }
@@ -165,6 +164,14 @@ main {
 }
 main article{
     padding: 2rem;
+}
+
+main article a{
+    color: #c1b619 !important;
+}
+
+main article strong{
+    font-weight: 1000;
 }
 
 
@@ -205,7 +212,7 @@ video{
 }
 
 p {
-    padding: 1.5rem 2rem;
+    margin: 1.5rem 2rem;
     font-size: 1.25rem;
     text-align: justify;
 }
