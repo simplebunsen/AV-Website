@@ -63,6 +63,7 @@ body {
 
 .nav-area .nav-actual{
     padding: 1rem;
+    width: 100%;
 }
 
 .nav-area nav ul {
@@ -73,11 +74,16 @@ body {
 .nav-area nav ul li {
     margin: .5rem 0;
     white-space: nowrap;    
-    color: #E3D478;
+    color: #E3D478;    
+    transition: 0.2s;
 }
 .nav-area nav ul li:hover {
     color: white;
     transform: scale(1.1);
+}
+
+.nav-area a:hover{
+    color: white;
 }
 
 .nav-area .logo-container {
@@ -87,9 +93,7 @@ body {
     line-height: 1.7rem;
     font-size: 2.2rem;
 }
-video{
-    width: 100%;
-}
+
 
 .nav-area .nav-credits {
     margin-top: auto;
@@ -132,6 +136,7 @@ button.accordion {
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #ccc;
+    color: black;
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -162,6 +167,7 @@ main article{
     padding: 2rem;
 }
 
+
 .banner {
     height: 3rem;
     color: black;
@@ -169,16 +175,13 @@ main article{
     background-color: #9db5d1b3;
     display: flex;
     justify-content: left;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
     border-left: #2a5f92 .5rem solid;
 }
 
-.main-title{
+.banner.main-title{
     height: 6rem;
 }
-
-
 
 .banner h1 {
     font-size: 3.5rem;
@@ -189,16 +192,20 @@ main article{
 }
 
 .banner h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.5rem;
     font-family: 'PT Sans Narrow', sans-serif;
     align-self: center;
     justify-self: left;
 }
 
+video{
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
 
 p {
-    margin: 1.5rem 2rem;
+    padding: 1.5rem 2rem;
     font-size: 1.25rem;
     text-align: justify;
 }
@@ -221,7 +228,9 @@ p.zitat a {
 
 table {
     border: rgb(25, 25, 25) 2px solid;
+    margin: 1.5rem 2rem;
 }
+
 
 
 
@@ -245,9 +254,25 @@ aside.sidebar{
     flex-wrap: wrap;
 }
 
-aside.sidebar figure {
-    padding: 1rem;
+aside a{
+    text-decoration: none;
 }
+
+.gallery img{
+    width: 100%;
+}
+
+
+aside.sidebar figure {
+    margin: 1rem;
+    transition: .4s;
+}
+
+aside.sidebar figure:hover{
+    filter:saturate(1.5);
+    transform: scale(1.02);
+}
+
 aside.sidebar figure img{
     max-width: 100%;
 }
