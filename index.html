@@ -303,6 +303,7 @@
     <script src="./assets/libraries/lightgalleryjs/lg-thumbnail.umd.js"></script>
     <script src="./assets/libraries/lightgalleryjs/lg-zoom.umd.js"></script>
     <script src="./assets/libraries/lightgalleryjs/lg-fullscreen.umd.js"></script>
+    <script src="./assets/libraries/lightgalleryjs/lg-autoplay.umd.js"></script>
 
     <button class="tab-button" onclick="openTabContent(event, 'DefaultTab')" id="defaultOpen"
         style="display: none">A</button>
@@ -340,10 +341,11 @@
             // Append caption inside the slide item
             // to apply some animation for the captions (Optional)
             appendSubHtmlTo: ".lg-item",
+            slideShowAutoplay: true,
             // Delay slide transition to complete captions animations
             // before navigating to different slides (Optional)
             // You can find caption animation demo on the captions demo page
-            plugins: [lgZoom],        
+            plugins: [lgZoom, lgAutoplay],        
         });
 
         setTimeout(() => {
