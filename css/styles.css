@@ -340,6 +340,11 @@ table {
     }
 }
 
+.tabbed-section .tab-content h2{
+    margin: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
 
 
 /*===END OF MAIN AREA===*/
