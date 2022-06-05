@@ -345,6 +345,15 @@ table {
     font-size: 1.8rem;
 }
 
+main .gallery figure {
+    width: 100%;
+    display: none;
+}
+
+main .inline-gallery-container{
+    height: 30rem;
+}
+
 
 
 /*===END OF MAIN AREA===*/
@@ -367,7 +376,7 @@ aside a {
     text-decoration: none;
 }
 
-.gallery img {
+aside.sidebar .gallery img {
     width: 100%;
 }
 
