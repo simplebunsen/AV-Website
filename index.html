@@ -218,13 +218,16 @@
         <article class="tabbed-section">
 
             <div class="banner" style="margin-bottom: 2rem;">
-                <h2>TAB SECTIONS</h2>
+                <h2 id="tab-demo">TAB SECTIONS</h2>
             </div>
 
             <div class="tabs">
-                <button class="tab-button" onclick="openTabContent(event, 'TabName1')">Svenja</button>
-                <button class="tab-button" onclick="openTabContent(event, 'TabName2')">Sandro</button>
-                <button class="tab-button" onclick="openTabContent(event, 'TabName3')">Lukas</button>
+                <button class="tab-button" onclick="openTabContent(event, 'TabName1')"><a
+                        href="#tab-demo">Svenja</a></button>
+                <button class="tab-button" onclick="openTabContent(event, 'TabName2')"><a
+                        href="#tab-demo">Sandro</a></button>
+                <button class="tab-button" onclick="openTabContent(event, 'TabName3')"><a
+                        href="#tab-demo">Lukas</a></button>
             </div>
             <div class="tabs-container">
                 <div id="DefaultTab" class="tab-content">
@@ -250,6 +253,26 @@
                     </p>
                 </div>
             </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim veritatis tempore, explicabo unde
+                quis, mollitia libero quod sed tenetur aut itaque, dolores adipisci aliquam hic numquam! Nisi dolore
+                blanditiis nesciunt sequi sit mollitia alias, cumque porro ratione excepturi rerum.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim veritatis tempore, explicabo unde
+                quis, mollitia libero quod sed tenetur aut itaque, dolores adipisci aliquam hic numquam! Nisi dolore
+                blanditiis nesciunt sequi sit mollitia alias, cumque porro ratione excepturi rerum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim veritatis tempore, explicabo unde
+                quis, mollitia libero quod sed tenetur aut itaque, dolores adipisci aliquam hic numquam! Nisi dolore
+                blanditiis nesciunt sequi sit mollitia alias, cumque porro ratione excepturi rerum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim veritatis tempore, explicabo unde
+                quis, mollitia libero quod sed tenetur aut itaque, dolores adipisci aliquam hic numquam! Nisi dolore
+                blanditiis nesciunt sequi sit mollitia alias, cumque porro ratione excepturi rerum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim veritatis tempore, explicabo unde
+                quis, mollitia libero quod sed tenetur aut itaque, dolores adipisci aliquam hic numquam! Nisi dolore
+                blanditiis nesciunt sequi sit mollitia alias, cumque porro ratione excepturi rerum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim veritatis tempore, explicabo unde
+                quis, mollitia libero quod sed tenetur aut itaque, dolores adipisci aliquam hic numquam! Nisi dolore
+                blanditiis nesciunt sequi sit mollitia alias, cumque porro ratione excepturi rerum.</p>
         </article>
     </main>
     <!-- END MAIN CONTENT -->
@@ -305,6 +328,8 @@
     <script src="./assets/libraries/lightgalleryjs/lg-fullscreen.umd.js"></script>
     <script src="./assets/libraries/lightgalleryjs/lg-autoplay.umd.js"></script>
 
+
+    <!-- Invisible Button to facilitate standard content for the tabs -->
     <button class="tab-button" onclick="openTabContent(event, 'DefaultTab')" id="defaultOpen"
         style="display: none">A</button>
 
@@ -317,13 +342,13 @@
     <script type="text/javascript">
         lightGallery(document.getElementById('sidebar-gallery'), {
             plugins: [lgZoom, lgThumbnail, lgFullscreen],
-            licenseKey: '0000-0000-000-0000',            
-            download: false,            
+            licenseKey: '0000-0000-000-0000',
+            download: false,
             hideBarsDelay: 1000,
         });
     </script>
 
-    <!-- inline gallery -->
+    <!-- inline gallery 1-->
     <script type="text/javascript">
         const $lgContainer = document.getElementById("inline-gallery-container-1");
 
@@ -338,7 +363,7 @@
             subHtmlSelectorRelative: true,
             appendSubHtmlTo: ".lg-item",
             slideShowAutoplay: true,
-            plugins: [lgZoom, lgAutoplay],        
+            plugins: [lgZoom, lgAutoplay],
         });
 
         setTimeout(() => {
