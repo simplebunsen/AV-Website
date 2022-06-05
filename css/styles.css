@@ -373,6 +373,10 @@ main .inline-gallery-container{
     width: fit-content
 }
 
+.lg-progress-bar .lg-progress{
+    background-color: #E3D478;
+}
+
 
 
 

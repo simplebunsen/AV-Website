@@ -317,7 +317,9 @@
     <script type="text/javascript">
         lightGallery(document.getElementById('sidebar-gallery'), {
             plugins: [lgZoom, lgThumbnail, lgFullscreen],
-            licenseKey: '0000-0000-000-0000'
+            licenseKey: '0000-0000-000-0000',            
+            download: false,            
+            hideBarsDelay: 1000,
         });
     </script>
 
@@ -327,24 +329,15 @@
 
         const inlineGallery = lightGallery($lgContainer, {
             container: $lgContainer,
-            // Turn off hash plugin in case if you are using it
-            // as we don't want to change the url on slide change
             hash: false,
-            // Do not allow users to close the gallery
             closable: false,
             download: false,
             counter: false,
             hideBarsDelay: 1000,
-            // Add maximize icon to enlarge the gallery
             showMaximizeIcon: true,
             subHtmlSelectorRelative: true,
-            // Append caption inside the slide item
-            // to apply some animation for the captions (Optional)
             appendSubHtmlTo: ".lg-item",
             slideShowAutoplay: true,
-            // Delay slide transition to complete captions animations
-            // before navigating to different slides (Optional)
-            // You can find caption animation demo on the captions demo page
             plugins: [lgZoom, lgAutoplay],        
         });
 
