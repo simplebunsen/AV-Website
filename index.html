@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link href="./css/styles.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="./assets/libraries/lightgalleryjs/lightgallery-bundle.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
     <title>Dokumentation - Poppe, Riebesel, Rapp</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -178,34 +178,34 @@
             </div>
 
             <div id="inline-gallery-container-1" class="inline-gallery-container gallery">
-                <a href="./assets/img/DnD Character.JPG">
+                <a href="./assets/img/DnD Character.JPG" data-sub-html=".caption">
                     <figure>
                         <img src="./assets/img/DnD Character.JPG" />
-                        <figcaption>Das ist Hauskatze</figcaption>
+                        <figcaption class="caption">Das ist Hauskatze</figcaption>
                     </figure>
                 </a>
-                <a href="./assets/img/Concept Art.jpg">
+                <a href="./assets/img/Concept Art.jpg" data-sub-html=".caption">
                     <figure>
                         <img src="./assets/img/Concept Art.jpg" />
-                        <figcaption>Ein Stein</figcaption>
+                        <figcaption class="caption">Ein Stein</figcaption>
                     </figure>
                 </a>
-                <a href="./assets/img/Color Scheme.jpg">
+                <a href="./assets/img/Color Scheme.jpg" data-sub-html=".caption">
                     <figure>
                         <img src="./assets/img/Color Scheme.jpg" />
-                        <figcaption>Kakturs</figcaption>
+                        <figcaption class="caption">Kakturs</figcaption>
                     </figure>
                 </a>
-                <a href="./assets/img/Nah_Textur_2.jpg">
+                <a href="./assets/img/Nah_Textur_2.jpg" data-sub-html=".caption">
                     <figure>
                         <img src="./assets/img/Nah_Textur_2.jpg" />
-                        <figcaption>Jens Müller</figcaption>
+                        <figcaption class="caption">Jens Müller</figcaption>
                     </figure>
                 </a>
-                <a href="./assets/img/Textures.jpg">
+                <a href="./assets/img/Textures.jpg" data-sub-html=".caption">
                     <figure>
                         <img src="./assets/img/Textures.jpg" />
-                        <figcaption>Mine Craft</figcaption>
+                        <figcaption class="caption">Mine Craft</figcaption>
                     </figure>
                 </a>
             </div>
@@ -331,22 +331,19 @@
             hash: false,
             // Do not allow users to close the gallery
             closable: false,
+            download: false,
+            counter: false,
+            hideBarsDelay: 1000,
             // Add maximize icon to enlarge the gallery
             showMaximizeIcon: true,
+            subHtmlSelectorRelative: true,
             // Append caption inside the slide item
             // to apply some animation for the captions (Optional)
             appendSubHtmlTo: ".lg-item",
             // Delay slide transition to complete captions animations
             // before navigating to different slides (Optional)
             // You can find caption animation demo on the captions demo page
-            plugins: [lgZoom, lgThumbnail],
-            
-
-            // Completely optional
-            // Adding as the codepen preview is usually smaller
-            thumbWidth: 60,
-            thumbHeight: "40px",
-            thumbMargin: 4
+            plugins: [lgZoom],        
         });
 
         setTimeout(() => {

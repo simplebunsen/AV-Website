@@ -351,8 +351,30 @@ main .gallery figure {
 }
 
 main .inline-gallery-container{
-    height: 30rem;
+    aspect-ratio: 16 / 9;
+    margin: 1rem auto;
+    overflow: visible;
 }
+
+
+.lg-content{
+    top: 0px !important;
+}
+
+.lg-sub-html{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.418);
+    margin: 0 auto;
+    padding: .2rem .6rem .2rem .6rem;
+    padding-top: .2rem;
+    border: 0px hidden #1C6EA4;
+    border-radius: .5rem .5rem 0px 0px;
+    width: fit-content
+}
+
+
+
 
 
 
