@@ -48,7 +48,7 @@
 
 html {
     font-size: 16px;
-    width: 100%;    
+    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -71,6 +71,36 @@ body {
     grid-template-columns: 1fr 5fr 2fr;
     grid-template-rows: 3rem 1fr 2rem;
 }
+
+
+
+.too-small-warning {
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    z-index: 100;
+}
+
+.too-small-warning p {
+    display: block;
+    width: 90%;
+    margin: 40vh auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (max-height: 900px),
+screen and (max-width: 1080px) {
+
+    .too-small-warning {
+        display: block;
+    }
+}
+
 
 /*===START OF NAV AREA===*/
 
@@ -347,7 +377,7 @@ table {
     }
 }
 
-.tabbed-section #default-tab-container{
+.tabbed-section #default-tab-container {
     color: rgb(184, 184, 184);
     padding: 2rem;
     display: flex;
@@ -355,15 +385,15 @@ table {
     align-items: center;
 }
 
-.tabbed-section .tab-content h2{
+.tabbed-section .tab-content h2 {
     margin: 1rem 2rem;
     font-size: 1.8rem;
 }
 
-.tabbed-section a{
+.tabbed-section a {
     text-decoration: none;
     display: block;
-    color: black;    
+    color: black;
     padding: .9rem 1rem;
 }
 
@@ -372,19 +402,19 @@ main .gallery figure {
     display: none;
 }
 
-main .inline-gallery-container{
+main .inline-gallery-container {
     aspect-ratio: 16 / 9;
     margin: 1rem auto;
     overflow: visible;
 }
 
 
-.lg-content{
+.lg-content {
     top: 0px !important;
     background-color: rgb(25, 25, 25);
 }
 
-.lg-sub-html{
+.lg-sub-html {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.418);
@@ -396,7 +426,7 @@ main .inline-gallery-container{
     width: fit-content
 }
 
-.lg-progress-bar .lg-progress{
+.lg-progress-bar .lg-progress {
     background-color: #E3D478;
 }
 
