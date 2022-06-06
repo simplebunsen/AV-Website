@@ -342,6 +342,10 @@ table {
     background-color: #f1f1f1;
 }
 
+.tabbed-section .tabs-container{
+    margin-bottom: 2rem;
+}
+
 .tabbed-section .tab-button {
     background-color: inherit;
     font-family: "PT Sans", sans-serif;
@@ -413,6 +417,10 @@ main .inline-gallery-container {
     aspect-ratio: 16 / 9;
     margin: 1rem auto;
     overflow: visible;
+}
+
+main .tabbed-section .inline-gallery-container {
+    margin: 1rem 1rem;
 }
 
 
