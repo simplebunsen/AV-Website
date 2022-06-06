@@ -4,7 +4,6 @@ function openTabContent(evt, cityName, containerName) {
 
   // Get all elements with class="tabcontent" and hide them
 
-  //TODO: should not kill tabs of other containers
   let currentContainer = document.getElementById(containerName);
   tabcontent = currentContainer.querySelectorAll("." + "tab-content");
   for (i = 0; i < tabcontent.length; i++) {
