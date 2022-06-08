@@ -332,6 +332,19 @@ table {
     margin: 1.5rem 2rem;
 }
 
+main figure{  
+    margin: 1.5rem 2rem;
+}
+
+main figure img{
+    width: 100%;
+}
+
+main figure figcaption{
+    width: 100%
+}
+
+
 /*Tab Stuff*/
 
 .tabbed-section .tabs {
