@@ -5,22 +5,20 @@
     <meta charset="UTF-8" />
     <link type="text/css" rel="stylesheet" href="../../assets/libraries/lightgalleryjs/lightgallery-bundle.css" />
     <link href="../../css/styles.css" rel="stylesheet" />
-    <title>Mad Motion - Dokumentation - Poppe, Riebesel, Rapp</title>
+    <title>Mad Motion! - Poppe, Riebesel, Rapp</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
+
     <!-- TOO SMALL WARNING -->
     <div class="too-small-warning">
-
         <p>Bitte betrachten Sie diese Website auf einem Desktop-Gerät oder Laptop mit mindestens Full-HD Auflösung. Die
-            Dokumentation ist nicht mobile-optimiert.</p>
-
+            Dokumentation ist nicht mobile-optimiert.
+        </p>
     </div>
-
-
     <!-- END OF TOO SMALL WARNING -->
 
 
@@ -28,7 +26,8 @@
     <aside class="nav-area">
         <div class="nav-container">
             <div class="logo-container">
-                <a href=""><strong>S</strong>uper <br /> <strong>U</strong>nusual <br /> <strong>S</strong>cenes</a>
+                <a href="../../index.html"><strong>S</strong>uper <br /> <strong>U</strong>nusual <br />
+                    <strong>S</strong>cenes</a>
             </div>
             <nav class="nav-actual">
                 <ul>
@@ -83,7 +82,9 @@
                             </li>
                             <li><a href="../../html/projects/4_hearit.html"><span class="label">4</span> Hear It!</a>
                             </li>
-                            <li><a href="../../html/projects/5_showit.html"><span class="label">5</span> Show It!</a>
+                            <li><a href="../../html/projects/5_cutandcopy.html"><span class="label">5</span> Cut and
+                                    Copy!</a></li>
+                            <li><a href="../../html/projects/6_showit.html"><span class="label">6</span> Show it!</a>
                             </li>
                         </ul>
                     </div>
@@ -111,7 +112,7 @@
 
             </nav>
             <div class="nav-credits">
-                <p><a href="">
+                <p><a href="../../html/extras/arbeitsteilung.html">
                         <strong>Unser Team: </strong>
                         <br /><br />
                         Sandro Poppe <br />
@@ -223,17 +224,15 @@
                 </a>
             </div>
         </article>
-
-
     </main>
     <!-- END MAIN CONTENT -->
 
     <!-- START OPTIONAL ASIDE -->
     <aside class="sidebar">
         <div class="gallery" id="sidebar-gallery">
-            <a href="../../assets/img/1_2_madmotion/spiderman01.jpg">
+            <a href="../../assets/img/DnD Character.JPG">
                 <figure>
-                    <img src="../../assets/img/1_2_madmotion/spiderman01.jpg" />
+                    <img src="../../assets/img/DnD Character.JPG" />
                     <figcaption>Das ist Hauskatze</figcaption>
                 </figure>
             </a>
@@ -265,12 +264,6 @@
     </aside>
     <!-- END OPTIONAL ASIDE -->
 
-    <!-- START FOOTER -->
-
-    <!-- END FOOTER -->
-
-
-
     <script src="../../js/accordion.js"></script>
     <script src="../../js/tabs.js"></script>
     <script src="../../assets/libraries/lightgalleryjs/lightgallery.umd.js"></script>
@@ -278,49 +271,17 @@
     <script src="../../assets/libraries/lightgalleryjs/lg-zoom.umd.js"></script>
     <script src="../../assets/libraries/lightgalleryjs/lg-fullscreen.umd.js"></script>
     <script src="../../assets/libraries/lightgalleryjs/lg-autoplay.umd.js"></script>
-
+    <script src="../../assets/libraries/lightgalleryjs/lg-hash.umd.js"></script>
+    <script src="../../js/inlineGalleryInitializer.js"></script>
+    <script src="../../js/sidebarGalleryInitializer.js"></script>
 
     <!-- Invisible Button to facilitate standard content for the tabs -->
-    <button class="tab-button" onclick="openTabContent(event, 'DefaultTab')" id="defaultOpen"
-        style="display: none">A</button>
-
+    <button class="tab-button" onclick="openDefaultTabs(event)" id="defaultOpen" style="display: none">A</button>
     <script>
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
 
-    <!-- sidebar gallery -->
-    <script type="text/javascript">
-        lightGallery(document.getElementById('sidebar-gallery'), {
-            plugins: [lgZoom, lgThumbnail, lgFullscreen],
-            licenseKey: '0000-0000-000-0000',
-            download: false,
-            hideBarsDelay: 1000,
-        });
-    </script>
-
-    <!-- inline gallery 1-->
-    <script type="text/javascript">
-        const $lgContainer = document.getElementById("inline-gallery-container-1");
-
-        const inlineGallery = lightGallery($lgContainer, {
-            container: $lgContainer,
-            hash: false,
-            closable: false,
-            download: false,
-            counter: false,
-            hideBarsDelay: 1000,
-            showMaximizeIcon: true,
-            subHtmlSelectorRelative: true,
-            appendSubHtmlTo: ".lg-item",
-            slideShowAutoplay: true,
-            plugins: [lgZoom, lgAutoplay],
-        });
-
-        setTimeout(() => {
-            inlineGallery.openGallery();
-        }, 200);
-    </script>
 </body>
 
 </html>
