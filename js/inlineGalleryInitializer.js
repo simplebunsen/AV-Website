@@ -17,7 +17,7 @@ for (let i = 0; i < galleries.length; i++) {
         appendSubHtmlTo: ".lg-item",
         slideShowAutoplay: true,
         //TODO: implement autoplay if bug is resolved.....
-        plugins: [lgZoom],
+        plugins: [lgZoom, lgAutoplay],
     });
 
     setTimeout(() => {
