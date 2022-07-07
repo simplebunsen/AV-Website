@@ -172,8 +172,7 @@ a:visited {
 
 .nav-area .logo-container {
     margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
     line-height: 1.7rem;
     font-size: 2.2rem;
 }
@@ -181,7 +180,7 @@ a:visited {
 
 .nav-area .nav-credits {
     margin-top: auto;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 2rem;
     font-size: .8rem;
     font-style: italic;
