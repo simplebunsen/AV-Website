@@ -434,6 +434,12 @@ main figure figcaption{
     margin-top: 1rem;
 }
 
+.tabbed-section object{
+    width: 100%;
+    padding: 0 2rem;
+    aspect-ratio: 16 / 9;
+}
+
 main .gallery figure {
     width: 100%;
     display: none;
