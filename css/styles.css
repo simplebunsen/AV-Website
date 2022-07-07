@@ -388,6 +388,7 @@ main figure figcaption{
     border: 1px solid #ccc;
     border-top: none;    
     padding-top: 1rem;
+    width: 100%;
 }
 
 @keyframes fadeEffect {
@@ -418,6 +419,19 @@ main figure figcaption{
     display: block;
     color: black;
     padding: .9rem 1rem;
+}
+
+.tabbed-section img{
+    width: 100%;
+    padding: 3rem 2rem 0rem 2rem;
+}
+
+.tabbed-section h2+img{
+    padding-top: 1rem;
+}
+
+.tabbed-section p{
+    margin-top: 1rem;
 }
 
 main .gallery figure {
