@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <!-- TOO SMALL WARNING -->
     <div class="too-small-warning">
         <p>Bitte betrachten Sie diese Website auf einem Desktop-Gerät oder Laptop mit mindestens Full-HD Auflösung. Die
@@ -26,7 +26,8 @@
     <aside class="nav-area">
         <div class="nav-container">
             <div class="logo-container">
-                <a href="../../index.html"><strong>S</strong>uper <br /> <strong>U</strong>nusual <br /> <strong>S</strong>cenes</a>
+                <a href="../../index.html"><strong>S</strong>uper <br /> <strong>U</strong>nusual <br />
+                    <strong>S</strong>cenes</a>
             </div>
             <nav class="nav-actual">
                 <ul>
@@ -42,17 +43,21 @@
                     <button class="accordion">Vorlesungen</button>
                     <div class="nav-section">
                         <ul>
-                            <li><a href="../../html/lectures/1_historyofanimation.html"><span class="label">1</span> History
+                            <li><a href="../../html/lectures/1_historyofanimation.html"><span class="label">1</span>
+                                    History
                                     of Animation</a></li>
-                            <li><a href="../../html/lectures/2_historyofcinema.html"><span class="label">2</span> History of
+                            <li><a href="../../html/lectures/2_historyofcinema.html"><span class="label">2</span>
+                                    History of
                                     Cinema</a></li>
-                            <li><a href="../../html/lectures/3_basicsofaudio.html"><span class="label">3</span> Basics of
+                            <li><a href="../../html/lectures/3_basicsofaudio.html"><span class="label">3</span> Basics
+                                    of
                                     Audio</a></li>
                             <li><a href="../../html/lectures/4_filmsprache.html"><span class="label">4</span>
                                     Filmsprache</a></li>
                             <li><a href="../../html/lectures/5_preproduction.html"><span class="label">5</span>
                                     Preproduction</a></li>
-                            <li><a href="../../html/lectures/6_animation.html"><span class="label">6</span> Animation</a>
+                            <li><a href="../../html/lectures/6_animation.html"><span class="label">6</span>
+                                    Animation</a>
                             </li>
                         </ul>
                     </div>
@@ -64,16 +69,23 @@
                                     Wunderscheibe</a></li>
                             <li><a href="../../html/projects/1_2_madmotion.html"><span class="label">1.2</span> Mad
                                     Motion!</a></li>
-                            <li><a href="../../html/projects/2_1_frameit.html"><span class="label">2.1</span> Frame It!</a>
+                            <li><a href="../../html/projects/2_1_frameit.html"><span class="label">2.1</span> Frame
+                                    It!</a>
                             </li>
-                            <li><a href="../../html/projects/2_2_boardit.html"><span class="label">2.2</span> Board It!</a>
+                            <li><a href="../../html/projects/2_2_boardit.html"><span class="label">2.2</span> Board
+                                    It!</a>
                             </li>
-                            <li><a href="../../html/projects/2_3_animatic.html"><span class="label">2.3</span> Animatic!</a>
+                            <li><a href="../../html/projects/2_3_animatic.html"><span class="label">2.3</span>
+                                    Animatic!</a>
                             </li>
-                            <li><a href="../../html/projects/3_placeit.html"><span class="label">3</span> Place It!</a></li>
-                            <li><a href="../../html/projects/4_hearit.html"><span class="label">4</span> Hear It!</a></li>
-                            <li><a href="../../html/projects/5_cutandcopy.html"><span class="label">5</span> Cut and Copy!</a></li>
-                            <li><a href="../../html/projects/6_showit.html"><span class="label">6</span> Show it!</a></li>
+                            <li><a href="../../html/projects/3_placeit.html"><span class="label">3</span> Place It!</a>
+                            </li>
+                            <li><a href="../../html/projects/4_hearit.html"><span class="label">4</span> Hear It!</a>
+                            </li>
+                            <li><a href="../../html/projects/5_cutandcopy.html"><span class="label">5</span> Cut and
+                                    Copy!</a></li>
+                            <li><a href="../../html/projects/6_showit.html"><span class="label">6</span> Show it!</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -123,6 +135,239 @@
             <p>
                 Dummy Vorlesung.
             </p>
+
+            <article class="tabbed-section" , id='tabbed-section-1'>
+
+                <div class="banner">
+                    <h2 id="tab-demo">KRITIKEN</h2>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-button" onclick="openTabContent(event, 'TabName1', 'tabbed-section-1')"><a
+                            href="#tab-demo">Blender Studios:<br>Sprite Fright</a></button>
+                    <button class="tab-button" onclick="openTabContent(event, 'TabName2', 'tabbed-section-1')"><a
+                            href="#tab-demo">Schnellmann:<br>Bis zum letzten Tropfen</a></button>
+                    <button class="tab-button" onclick="openTabContent(event, 'TabName3', 'tabbed-section-1')"><a
+                            href="#tab-demo">Film 3</a></button>
+                    <button class="tab-button" onclick="openTabContent(event, 'TabName4', 'tabbed-section-1')"><a
+                            href="#tab-demo">Film 4</a></button>
+                    <button class="tab-button" onclick="openTabContent(event, 'TabName5', 'tabbed-section-1')"><a
+                            href="#tab-demo">Film 5</a></button>
+                </div>
+                <div class="tabs-container">
+                    <div id="DefaultTab" class="tab-content default-tab">
+                        <div id="default-tab-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2" style="width: 3rem;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <h2>Choose your Fighter!</h2>
+                        </div>
+                    </div>
+                    <div id="TabName1" class="tab-content">
+                        <h2>Blender Open Movie: Sprite Fright</h2>
+                        <p>
+                            “Sprite Fright” ist der neueste Kurzfilm des Blender Studios. Der Film wurde ausschließlich im
+                            gleichnamigen 3D-Animationsprogramm Blender produziert.
+                        </p>
+
+                        <p>
+                            In dem Short Movie geht es um eine Gruppe Teenager, die unterwegs im Wald sind. Es handelt sich
+                            dabei sowohl um rücksichtslose Hooligans, die den Wald nicht respektieren und dort nur feiern
+                            wollen, als auch um ein Mädchen, das sich für die Natur interessiert und den Gegenpol zur Gruppe
+                            bildet.
+                        </p>
+
+                        <p>
+                            Die Charakter treffen dann auf erst freundlich wirkende Pilzwesen, die in Wahrheit aber wütend
+                            über die Zerstörung ihres Walds sind, und die Teenager töten wollen.
+                        </p>
+
+                        <p>
+                            Der Film bedient sich eher klassisch und regulär wirkender Kadrierungen und Einstellungsgrößen,
+                            und hält sich von Experimenten diesbezüglich eher fern, was allerdings deren durchgeplante
+                            Wirkung nicht mindert. Im Gegenteil lässt diese Darstellung sogar die immer fortgeschrittener
+                            werdenden Animationsmöglichkeiten in der Software Blender in den Fokus rücken, was ja das
+                            eigentliche Ziel gewesen sein dürfte. Im Folgenden werden einige Beispiele diesbezüglich
+                            genannt.
+                        </p>
+
+                        <p>
+                            Anfangs des Films wird gezeigt, wie eine Schnecke im Wald munter ein Laubblatt frisst. Es
+                            handelt sich hier um eine Perspektive, die auf Augenhöhe der Schnecke, also eigentlich in
+                            froschperspektivischen Verhältnissen komponiert ist. Das Mädchen bückt sich dann auf den Boden
+                            herunter, betrachtet die Schnecke und freut sich.
+                        </p>
+
+                        <p>
+                            Dies bewirkt einen sehr interessanten visuellen Effekt, und trifft gleich zur Beginn des Films
+                            eine wichtige Aussage über den Charakter des Mädchens und ihr Verhältnis zum Wald. Während man
+                            bei einer so tiefen Kameraeinstellungs eigentlich von allein in die Erwartungshaltung kommt, in
+                            der unterlegenen Position zu sein und vielleicht gleich einen anderen, riesenhaften, überlegenen
+                            Charakter von unten zu sehen, wird diese Erwartung hier auf den Kopf gestellt. Das Mädchen kniet
+                            sich auf den Boden und ist damit metaphorisch und wortwörtlich auf Augenhöhe mit der Natur,
+                            obwohl sich diese in der Hierarchie unter ihr befindet.
+                        </p>
+
+                        <p>
+                            Die beiden Charakter sind in etwa jeweils auf der linken und rechten Drittlungslinie platziert,
+                            blicken hier nach rechts, und haben somit Handlungsspielraum in diese Richtung, was der Szene
+                            ein klares “Vorwärts” vorgibt und subtil vermuten lässt, dass es mit den beiden Charaktern
+                            später noch weiter geht. Ein Trugschluss, da die Schnecke hier in einer überraschenden Auflösung
+                            der Szene plötzlich von einem riesenhaften Schuh zerquetscht wird. Dadurch werden die Wirkungen
+                            und Größenverhältnisse der Einstellung wieder in die eher gewohnten Bahnen zurückgeführt, was
+                            der Szene einen kreativen und runden Abschluss verleiht.
+                        </p>
+
+                        <p>
+                            Später gibt es dann eine große Totale, als die Gruppe über einen Abgrund auf einem Baumstamm
+                            balanciert. Hier sieht man alle menschlichen Charakter erstmals in einer Einstellung.
+                        </p>
+                        <p>
+                            Das Bild ist hier ganz klar in zwei Bereiche unterteilt, dazwischen liegt die Schlucht mit dem
+                            Baumstamm. Auf der Linken Seite der bekannte Weg, den die Gruppe verlässt, abgetrennt durch den
+                            Abgrund auf der rechten Seite dann der unbekannte Wald, wo der Ausgang ungewiss ist. Die
+                            Stimmung ist allerdings noch ausgelassen, was auch durch die weite, Überblick gebende
+                            Einstellungsgröße unterstützt wird.
+                        </p>
+
+                        <p>
+                            Die Handlung löst sich schließlich dann in einem großen Kampf auf, am Ende ist nur noch die
+                            Protagonistin übrig, die auf der Flucht denselben Baumstamm wieder überqueren muss. Hier werden
+                            dann weitaus unkonventionellere Einstellungsgrößen verwendet, der Fokus liegt ganz klar auf dem
+                            Mädchen und ihren Emotionen, unterstüzt durch Einstellungen wie Nahe und Halbnahe. Erst, als sie
+                            sich erfolgreich auf die andere Seite schwingen kann, wird wieder dieselbe Einstellungsgröße wie
+                            zu Beginn genutzt, hier nur nachts und in umgekehrter Richtung. Dies zieht einen Schlussstrich
+                            unter die Handlung und rundet gut ab, dass das Mädchen nun entkommen ist.
+                        </p>
+
+                        <p>
+                            Nach der Analyse dieses Shortfilms bekommt der Betrachter den Eindruck einer sehr solide
+                            komponierten und an vielen Stellen auch kreativ eingestellten Bildsprache. Die Macher haben
+                            offensichtlich viel Expertise im Bereich Filmsprache und können dieses Wissen souverän in einem
+                            interessanten Film anwenden. Der Film kann sich also voll und ganz auch mit etablierten Größen
+                            wie Disney und Pixar messen.
+                        </p>
+
+                    </div>
+                    <div id="TabName2" class="tab-content">
+                        <h2>Schnellmann: Bis zum letzten Tropfen</h2>
+                        <p>
+                            Beim Kurzfilm "Bis zum letzten Tropfen", Regie von Simon Schnellmann, geht es um einen
+                            Zeichentrickcharakter, der sich einer Chemotherapie unterziehen muss. Diese wird von einem
+                            lebenden Infusionsständer verabreicht, der den Patienten aufmuntern, therapieren, pflegen,
+                            und versorgen muss.
+                        </p>
+
+                        <p>
+                            Der Film ist in Schwarz-Weiß ohne Graustufen gehalten. Die Wahl dieses Stilmittels trägt
+                            gelungen zur Darstellung dieses doch tristen Themas um Krankheit und Tod bei. Der
+                            Zeichenstil allerdings ist eher schwungvoll, fröhlich, ausdrucksstark, die Bewegungen der
+                            Charakter
+                            muten cartoonhaft an. Dies wiederum spiegelt die eher leichtfüßige und komische Aufbereitung
+                            des
+                            ernsten Themas wider, es gibt als Charakter nun auch eine lustige, bewegte Infusionssäule
+                            und einen etwas schüchternen, zurückhaltenden Tod.
+                        </p>
+
+                        <p>
+                            Das Hauptaugenmerk bei diesem Short Film muss aber eindeutig auf das sehr besondere Framing
+                            und die Position im Format gelegt werden, da das Spiel mit diesen Parametern dem Film
+                            zentral
+                            zugrunde liegt, und ihm unter den im HSA Filmfestival gezeigten Werken auch als
+                            Alleinstellungsmerkmal dient.
+                        </p>
+
+                        <p>
+                            Der Film startet, als der Charakter seitlich durch eine Tür in den Frame tritt, ein Frame,
+                            der eigentlich nur wie ein Passepartout in der "echten" Bildgröße liegt.
+                        </p>
+                        <p>
+                            Zuerst bleibt diese Darstellung sehr rigide und starr gleich, die schwarzen Ränder geben dem
+                            Geschehen zwischen Patienten und Infusionsständer einen bedrückenden, dunklen Rahmen, ganz
+                            passend zum Kernthema.
+                        </p>
+                        <p>
+                            Als aber später die Handlung chaotischer und aktiver wird, spielt Schnellmann zunehmend
+                            stark mit dem Handlungsframe. Es ist zu passenden Zeitpunkten keine Seltenheit mehr, dass
+                            etwa der
+                            Tod, der ja sinngemäß außerhalb der Welt des Patienten auf ihn wartet, dann auch im
+                            schwarzen Rand auf die Bühne tritt, oder dass der Patient und sein Handlungsbereich etwa in
+                            wilden
+                            Verfolgungsszenen von weitaus dynamischer wirkenden, schrägen, diagonalen, trapezoiden oder
+                            länglichen Formaten geframed werden.
+                        </p>
+                        <p>
+                            Schnellmann verwendet bei der Darstellung hintereinander ablaufenden Handlungen hier auch
+                            schnelle "Schnitte", nach denen sich jeweils die Framegröße, -position oder -form verändert.
+                        </p>
+                        <p>
+                            Durch den Einsatz dieser Technik deckt der Film große Mengen von sequentiellen Handlungen in
+                            einer für den Kurzfilm angemessenen und die Hektik der Situation unterstreichenden
+                            Geschwindigkeit ab.
+                        </p>
+
+                        <p>
+                            Dieser Ansatz ist der Sehgewohnheit nun erst einmal fremd (wann verändert sich schon das
+                            Format
+                            während eines Films, oder wann treten Akteure außerhalb dessen auf?), kann dann jedoch mit
+                            außergewöhnlichen Bildwirkungen, speziell im Bereich der Dynamik und Bewegungswahrnehmung,
+                            als
+                            auch in Bezug auf eine logische Unterstützung der Handlung, punkten.
+                        </p>
+
+                        <p>
+                            Alles in allem zeigt sich "Bis zum letzten Tropfen" als eine sehr kreative, kurzweilige,
+                            komische, visuell interessante Umsetzung eines doch eher bedrückenden Themas.
+                        </p>
+                        <p>
+                            Der Produzent zeigt, dass er vor allem mithilfe der Position im Format und kreativer
+                            Einfälle in
+                            diesem Bereich, die Handlung sowohl logisch als auch in der Handlungswahrnehmung, neuartig
+                            und
+                            faszinierend umrahmen kann.
+                        </p>
+
+                    </div>
+                    <div id="TabName3" class="tab-content">
+                        <h2>Deine Bruda</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magnam, ipsam quia
+                            repellat
+                            error cum sapiente repellendus doloremque aperiam vitae officiis laboriosam omnis deleniti
+                            iure
+                            inventore minima dolores sequi illum minus iusto debitis nostrum fuga. Laboriosam deserunt
+                            nemo
+                            vero reiciendis.
+                        </p>
+                    </div>
+                    <div id="TabName4" class="tab-content">
+                        <h2>Deine Bruda</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magnam, ipsam quia
+                            repellat
+                            error cum sapiente repellendus doloremque aperiam vitae officiis laboriosam omnis deleniti
+                            iure
+                            inventore minima dolores sequi illum minus iusto debitis nostrum fuga. Laboriosam deserunt
+                            nemo
+                            vero reiciendis.
+                        </p>
+                    </div>
+                    <div id="TabName5" class="tab-content">
+                        <h2>Deine Bruda</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magnam, ipsam quia
+                            repellat
+                            error cum sapiente repellendus doloremque aperiam vitae officiis laboriosam omnis deleniti
+                            iure
+                            inventore minima dolores sequi illum minus iusto debitis nostrum fuga. Laboriosam deserunt
+                            nemo
+                            vero reiciendis.
+                        </p>
+                    </div>
+                </div>
+            </article>
         </article>
     </main>
     <!-- END MAIN CONTENT -->
