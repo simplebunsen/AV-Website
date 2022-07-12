@@ -343,6 +343,11 @@ main figure figcaption{
     width: 100%
 }
 
+main > article > img{
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
 
 /*Tab Stuff*/
 
