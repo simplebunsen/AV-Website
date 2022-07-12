@@ -49,12 +49,12 @@ html {
     font-size: clamp(16px, calc(1rem + ((1vw - 19.2px) * 1.6667)), 20px);
     /* Note: The calc base value (1rem) MUST be stated in REM to maintain accessibility */
     /* Where: 1.6667 = 100 * font-size_difference / viewport_width_difference */
-  
+
     /* Safari resize fix */
     min-height: 0vw;
     width: 100%;
     scroll-behavior: smooth;
-  }
+}
 
 
 * {
@@ -331,19 +331,19 @@ table {
     margin: 1.5rem 2rem;
 }
 
-main figure{  
+main figure {
     margin: 1.5rem 2rem;
 }
 
-main figure img{
+main figure img {
     width: 100%;
 }
 
-main figure figcaption{
+main figure figcaption {
     width: 100%
 }
 
-main > article > img{
+main>article>img {
     width: 100%;
     padding: 1.5rem 2rem;
 }
@@ -359,7 +359,7 @@ main > article > img{
     background-color: #f1f1f1;
 }
 
-.tabbed-section .tabs-container{
+.tabbed-section .tabs-container {
     margin-bottom: 2rem;
 }
 
@@ -373,7 +373,7 @@ main > article > img{
     border: none;
     outline: none;
     cursor: pointer;
-    transition: 0.3s;    
+    transition: 0.3s;
     box-shadow: .5rem 0px 0px #e6e6e6 inset;
 }
 
@@ -391,7 +391,7 @@ main > article > img{
     display: none;
     animation: fadeEffect 1s;
     border: 1px solid #ccc;
-    border-top: none;    
+    border-top: none;
     padding-top: 1rem;
     width: 100%;
 }
@@ -426,23 +426,38 @@ main > article > img{
     padding: .9rem 1rem;
 }
 
-.tabbed-section img{
+.tabbed-section img {
     width: 100%;
     padding: 3rem 2rem 0rem 2rem;
 }
 
-.tabbed-section h2+img{
+.tabbed-section h2+img {
     padding-top: 1rem;
 }
 
-.tabbed-section p{
+.tabbed-section p {
     margin-top: 1rem;
 }
 
-.tabbed-section object{
+.tabbed-section object {
     width: 100%;
     padding: 0 2rem;
     aspect-ratio: 16 / 9;
+
+    /* Fallback */
+    @supports not (aspect-ratio: 16 / 9) {
+        &::before {
+            float: left;
+            padding-top: 56.25%;
+            content: "";
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    }
 }
 
 main .gallery figure {
@@ -452,6 +467,22 @@ main .gallery figure {
 
 main .inline-gallery-container {
     aspect-ratio: 16 / 9;
+
+    /* Fallback */
+    @supports not (aspect-ratio: 16 / 9) {
+        &::before {
+            float: left;
+            padding-top: 56.25%;
+            content: "";
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    }
+
     margin: 1rem auto;
     overflow: visible;
 }
